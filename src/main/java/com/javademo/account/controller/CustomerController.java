@@ -40,6 +40,11 @@ public class CustomerController {
 			CustomerResponse customerResponse = customerService.getCustomerProfile(request.getCustomerId());
 			customerDetailsResponse.setCustomerResponse(customerResponse);
 			customerDetailsResponse.setCustomerId(request.getCustomerId());
+			customerDetailsResponse.setField1(request.getField1());
+			customerDetailsResponse.setField2(request.getField2());
+			customerDetailsResponse.setField3(request.getField3());
+			customerDetailsResponse.setField4(request.getField4());
+			customerDetailsResponse.setField5(request.getField5());
 			responseEntity = ResponseEntity.status(HttpStatus.OK).body(customerDetailsResponse);
 			log.info("end fetching Customer profile details in CustomerController for customer ID : {}", request.getCustomerId());
 		} catch (Exception e) {

@@ -42,7 +42,11 @@ public class AccountController {
 			
 			accDetailsResponse.setCustomerId(request.getCustomerId());
 			accDetailsResponse.setAccountResponse(accountResponse);
-			
+			accDetailsResponse.setField1(request.getField1());
+			accDetailsResponse.setField2(request.getField2());
+			accDetailsResponse.setField3(request.getField3());
+			accDetailsResponse.setField4(request.getField4());
+			accDetailsResponse.setField5(request.getField5());
 			responseEntity = ResponseEntity.status(HttpStatus.OK).body(accDetailsResponse);
 		
 			log.info("end fetching account profile details in Account Controller for customer ID : {}", request.getCustomerId());

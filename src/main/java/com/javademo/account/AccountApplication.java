@@ -39,7 +39,7 @@ public class AccountApplication implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 		
-		adddressRepo.save(new Address("street", "building", "address1", "address2", "city", "state"));
+		adddressRepo.save(new Address("street", "building", "address1", "address2", "city", "state", 1234));
 		
 		Customer customer = new Customer();
 		customer.setActive(true);

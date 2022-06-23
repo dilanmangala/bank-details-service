@@ -19,13 +19,14 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(value = { "id" })
 public class Address implements Serializable{
 	public Address() {}
-	public Address(String street, String building, String address1, String address2, String city, String state) {
+	public Address(String street, String building, String address1, String address2, String city, String state, int pin) {
 		this.street = street;
 		this.building = building;
 		this.address1 = address1;
 		this.address2 = address2;
 		this.city = city;
 		this.state = state;
+		this.pin = pin;
 	}
 
 	@Id
@@ -37,6 +38,7 @@ public class Address implements Serializable{
 	private String address2;
 	private String city;
 	private String state;
+	private int pin;
 	
 	@OneToOne(mappedBy = "address")
 	@JsonIgnore
@@ -104,6 +106,12 @@ public class Address implements Serializable{
 
 	public void setCustomer(Customer customer) {
 		this.customer = customer;
+	}
+	public int getPin() {
+		return pin;
+	}
+	public void setPin(int pin) {
+		this.pin = pin;
 	}
 	
 	
