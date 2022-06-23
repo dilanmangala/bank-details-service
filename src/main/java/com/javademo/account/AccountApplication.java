@@ -41,8 +41,6 @@ public class AccountApplication implements CommandLineRunner{
 		
 		adddressRepo.save(new Address("street", "building", "address1", "address2", "city", "state"));
 		
-		
-		
 		Customer customer = new Customer();
 		customer.setActive(true);
 		customer.setName("Sai");
@@ -51,8 +49,7 @@ public class AccountApplication implements CommandLineRunner{
 		customer.setEmailId("sai@gmail.com");
 		customer.setImei("12");
 		customer.setLatestLoggedIn(new Date());
-		
-		
+		customer.setMobileNo("0771234566");
 		
 		customer.setAddress(adddressRepo.findById(1));
 		
