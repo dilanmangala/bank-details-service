@@ -1,9 +1,15 @@
 package com.javademo.account.response;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+
 public class CustomerDetailsResponse {
 		private int customerId;
+		@JsonInclude(Include.NON_NULL)
 		private String errorCode;
+		@JsonInclude(Include.NON_NULL)
 		private String errorDesc;
+		@JsonInclude(Include.NON_NULL)
 		private CustomerResponse customerResponse;
 		
 		public int getCustomerId() {

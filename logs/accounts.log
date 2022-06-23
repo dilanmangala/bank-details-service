@@ -103,3 +103,226 @@
 2022-06-23 11:35:35.893  INFO 125264 --- [http-nio-8099-exec-2] c.j.a.controller.AccountController       : start fetching account profile details in Account Controller for customer ID : 3
 2022-06-23 11:35:35.894  INFO 125264 --- [http-nio-8099-exec-2] c.j.a.service.impl.CustomerServiceImpl   : start fetching account profile details for customer ID : 3
 2022-06-23 11:35:35.896 ERROR 125264 --- [http-nio-8099-exec-2] c.j.a.controller.AccountController       : Exception in get acoount details controller Source must not be null
+2022-06-23 12:08:18.589  INFO 106056 --- [main] com.javademo.account.AccountApplication  : Starting AccountApplication using Java 1.8.0_241 on 105248-005L with PID 106056 (D:\Dilan\Microservices\bank-details-service\target\classes started by Dilan_105248 in D:\Dilan\Microservices\bank-details-service)
+2022-06-23 12:08:18.592  INFO 106056 --- [main] com.javademo.account.AccountApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-06-23 12:08:19.131  INFO 106056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-23 12:08:19.183  INFO 106056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+2022-06-23 12:08:19.584  INFO 106056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
+2022-06-23 12:08:19.594  INFO 106056 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-23 12:08:19.594  INFO 106056 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-23 12:08:19.809  INFO 106056 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-23 12:08:19.809  INFO 106056 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1174 ms
+2022-06-23 12:08:19.834  INFO 106056 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-23 12:08:19.972  INFO 106056 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-23 12:08:19.985  INFO 106056 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dcbapp'
+2022-06-23 12:08:20.094  INFO 106056 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-23 12:08:20.151  INFO 106056 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-23 12:08:20.366  INFO 106056 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-23 12:08:20.489  INFO 106056 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-06-23 12:08:21.231  INFO 106056 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-23 12:08:21.238  INFO 106056 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-23 12:08:21.573  WARN 106056 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-23 12:08:21.844  INFO 106056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8099 (http) with context path ''
+2022-06-23 12:08:21.853  INFO 106056 --- [main] com.javademo.account.AccountApplication  : Started AccountApplication in 3.585 seconds (JVM running for 5.11)
+2022-06-23 12:08:31.213  INFO 106056 --- [http-nio-8099-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-23 12:08:31.213  INFO 106056 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-23 12:08:31.214  INFO 106056 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-23 12:08:31.294  INFO 106056 --- [http-nio-8099-exec-1] c.j.a.controller.AccountController       : start fetching account profile details in Account Controller for customer ID : 3
+2022-06-23 12:08:31.303  INFO 106056 --- [http-nio-8099-exec-1] c.j.a.service.impl.CustomerServiceImpl   : start fetching account profile details for customer ID : 3
+2022-06-23 12:08:31.400 ERROR 106056 --- [http-nio-8099-exec-1] c.j.a.controller.AccountController       : Exception in get acoount details controller Source must not be null
+2022-06-23 12:08:38.050  INFO 106056 --- [http-nio-8099-exec-2] c.j.a.controller.CustomerController      : start fetching Customer profile details in CustomerController for customer ID : 3
+2022-06-23 12:08:38.051  INFO 106056 --- [http-nio-8099-exec-2] c.j.a.service.impl.CustomerServiceImpl   : start fetching customer profile details for customer ID : 3
+2022-06-23 12:08:38.052 ERROR 106056 --- [http-nio-8099-exec-2] c.j.a.controller.CustomerController      : Exception in get customer profile controller Source must not be null
+2022-06-23 12:08:42.274  INFO 106056 --- [http-nio-8099-exec-3] c.j.a.controller.CustomerController      : start fetching Customer profile details in CustomerController for customer ID : 2
+2022-06-23 12:08:42.275  INFO 106056 --- [http-nio-8099-exec-3] c.j.a.service.impl.CustomerServiceImpl   : start fetching customer profile details for customer ID : 2
+2022-06-23 12:08:42.413  INFO 106056 --- [http-nio-8099-exec-3] c.j.a.service.impl.CustomerServiceImpl   : end fetching customer profile details for customer ID : 2
+2022-06-23 12:08:42.413  INFO 106056 --- [http-nio-8099-exec-3] c.j.a.controller.CustomerController      : end fetching Customer profile details in CustomerController for customer ID : 2
+2022-06-23 12:14:38.948  INFO 106056 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-06-23 12:14:39.575  INFO 106056 --- [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-06-23 12:14:39.678  INFO 106056 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-23 12:14:39.679  INFO 106056 --- [RMI TCP Connection(2)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-06-23 12:14:39.902  INFO 106056 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-23 12:14:39.913  INFO 106056 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-23 12:14:50.313  INFO 110524 --- [main] com.javademo.account.AccountApplication  : Starting AccountApplication using Java 1.8.0_241 on 105248-005L with PID 110524 (D:\Dilan\Microservices\bank-details-service\target\classes started by Dilan_105248 in D:\Dilan\Microservices\bank-details-service)
+2022-06-23 12:14:50.317  INFO 110524 --- [main] com.javademo.account.AccountApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-06-23 12:14:50.849  INFO 110524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-23 12:14:50.900  INFO 110524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 3 JPA repository interfaces.
+2022-06-23 12:14:51.291  INFO 110524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
+2022-06-23 12:14:51.301  INFO 110524 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-23 12:14:51.301  INFO 110524 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-23 12:14:51.502  INFO 110524 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-23 12:14:51.502  INFO 110524 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1137 ms
+2022-06-23 12:14:51.525  INFO 110524 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-23 12:14:51.643  INFO 110524 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-23 12:14:51.656  INFO 110524 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dcbapp'
+2022-06-23 12:14:51.759  INFO 110524 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-23 12:14:51.823  INFO 110524 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-23 12:14:52.054  INFO 110524 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-23 12:14:52.172  INFO 110524 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-06-23 12:14:52.757  INFO 110524 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-23 12:14:52.765  INFO 110524 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-23 12:14:53.085  WARN 110524 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-23 12:14:53.346  INFO 110524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8099 (http) with context path ''
+2022-06-23 12:14:53.355  INFO 110524 --- [main] com.javademo.account.AccountApplication  : Started AccountApplication in 3.343 seconds (JVM running for 4.808)
+2022-06-23 12:14:58.385  INFO 110524 --- [http-nio-8099-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-23 12:14:58.386  INFO 110524 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-23 12:14:58.386  INFO 110524 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-06-23 12:14:58.478  INFO 110524 --- [http-nio-8099-exec-1] c.j.a.controller.CustomerController      : start fetching Customer profile details in CustomerController for customer ID : 2
+2022-06-23 12:14:58.489  INFO 110524 --- [http-nio-8099-exec-1] c.j.a.service.impl.CustomerServiceImpl   : start fetching customer profile details for customer ID : 2
+2022-06-23 12:14:58.596  INFO 110524 --- [http-nio-8099-exec-1] c.j.a.service.impl.CustomerServiceImpl   : end fetching customer profile details for customer ID : 2
+2022-06-23 12:14:58.599  INFO 110524 --- [http-nio-8099-exec-1] c.j.a.controller.CustomerController      : end fetching Customer profile details in CustomerController for customer ID : 2
+2022-06-23 12:15:32.336  INFO 110524 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-06-23 12:15:33.169  INFO 110524 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-23 12:15:33.169  INFO 110524 --- [RMI TCP Connection(2)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-06-23 12:15:33.374  INFO 110524 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-23 12:15:33.377  INFO 110524 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-23 12:15:42.687  INFO 2928 --- [main] com.javademo.account.AccountApplication  : Starting AccountApplication using Java 1.8.0_241 on 105248-005L with PID 2928 (D:\Dilan\Microservices\bank-details-service\target\classes started by Dilan_105248 in D:\Dilan\Microservices\bank-details-service)
+2022-06-23 12:15:42.690  INFO 2928 --- [main] com.javademo.account.AccountApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-06-23 12:15:43.299  INFO 2928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-23 12:15:43.362  INFO 2928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 3 JPA repository interfaces.
+2022-06-23 12:15:43.782  INFO 2928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
+2022-06-23 12:15:43.789  INFO 2928 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-23 12:15:43.789  INFO 2928 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-23 12:15:43.984  INFO 2928 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-23 12:15:43.985  INFO 2928 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1248 ms
+2022-06-23 12:15:44.010  INFO 2928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-23 12:15:44.112  INFO 2928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-23 12:15:44.126  INFO 2928 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dcbapp'
+2022-06-23 12:15:44.269  INFO 2928 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-23 12:15:44.308  INFO 2928 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-23 12:15:44.485  INFO 2928 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-23 12:15:44.573  INFO 2928 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-06-23 12:15:45.098  INFO 2928 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-23 12:15:45.105  INFO 2928 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-23 12:15:45.443  WARN 2928 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-23 12:15:45.734  INFO 2928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8099 (http) with context path ''
+2022-06-23 12:15:45.746  INFO 2928 --- [main] com.javademo.account.AccountApplication  : Started AccountApplication in 3.394 seconds (JVM running for 5.094)
+2022-06-23 12:15:49.161  INFO 2928 --- [http-nio-8099-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-23 12:15:49.162  INFO 2928 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-23 12:15:49.163  INFO 2928 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-23 12:15:49.257  INFO 2928 --- [http-nio-8099-exec-1] c.j.a.controller.CustomerController      : start fetching Customer profile details in CustomerController for customer ID : 2
+2022-06-23 12:15:49.269  INFO 2928 --- [http-nio-8099-exec-1] c.j.a.service.impl.CustomerServiceImpl   : start fetching customer profile details for customer ID : 2
+2022-06-23 12:15:49.360  INFO 2928 --- [http-nio-8099-exec-1] c.j.a.service.impl.CustomerServiceImpl   : end fetching customer profile details for customer ID : 2
+2022-06-23 12:15:49.362  INFO 2928 --- [http-nio-8099-exec-1] c.j.a.controller.CustomerController      : end fetching Customer profile details in CustomerController for customer ID : 2
+2022-06-23 12:15:53.142  INFO 2928 --- [http-nio-8099-exec-2] c.j.a.controller.AccountController       : start fetching account profile details in Account Controller for customer ID : 3
+2022-06-23 12:15:53.143  INFO 2928 --- [http-nio-8099-exec-2] c.j.a.service.impl.CustomerServiceImpl   : start fetching account profile details for customer ID : 3
+2022-06-23 12:15:53.145 ERROR 2928 --- [http-nio-8099-exec-2] c.j.a.controller.AccountController       : Exception in get acoount details controller Source must not be null
+2022-06-23 12:15:57.801  INFO 2928 --- [http-nio-8099-exec-3] c.j.a.controller.AccountController       : start fetching account profile details in Account Controller for customer ID : 2
+2022-06-23 12:15:57.801  INFO 2928 --- [http-nio-8099-exec-3] c.j.a.service.impl.CustomerServiceImpl   : start fetching account profile details for customer ID : 2
+2022-06-23 12:15:57.808  INFO 2928 --- [http-nio-8099-exec-3] c.j.a.service.impl.CustomerServiceImpl   : end fetching account profile details for customer ID : 2
+2022-06-23 12:15:57.809  INFO 2928 --- [http-nio-8099-exec-3] c.j.a.controller.AccountController       : end fetching account profile details in Account Controller for customer ID : 2
+2022-06-23 12:17:32.299  INFO 128088 --- [main] c.j.account.AccountApplicationTests      : Starting AccountApplicationTests using Java 1.8.0_241 on 105248-005L with PID 128088 (started by Dilan_105248 in D:\Dilan\Microservices\bank-details-service)
+2022-06-23 12:17:32.300  INFO 128088 --- [main] c.j.account.AccountApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2022-06-23 12:17:33.124  INFO 128088 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-23 12:17:33.268  INFO 128088 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125 ms. Found 3 JPA repository interfaces.
+2022-06-23 12:17:34.476  INFO 128088 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-23 12:17:34.600  INFO 128088 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-23 12:17:34.989  INFO 128088 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-23 12:17:36.690  INFO 128088 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-23 12:17:37.118  INFO 128088 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-23 12:17:37.168  INFO 128088 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-06-23 12:17:38.720  INFO 128088 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-23 12:17:38.741  INFO 128088 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-23 12:17:39.983  WARN 128088 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-23 12:17:40.963  INFO 128088 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dcbapp'
+2022-06-23 12:17:41.946  INFO 128088 --- [main] c.j.account.AccountApplicationTests      : Started AccountApplicationTests in 9.974 seconds (JVM running for 11.388)
+2022-06-23 12:17:42.527  INFO 128088 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-23 12:17:42.528  INFO 128088 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-06-23 12:17:42.535  WARN 128088 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2022-06-23 12:17:42.535 ERROR 128088 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-212]
+2022-06-23 12:17:42.540  WARN 128088 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2022-06-23 12:17:42.540 ERROR 128088 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-212]
+2022-06-23 12:17:42.540  WARN 128088 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution
+2022-06-23 12:17:42.542  INFO 128088 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-23 12:17:42.590  INFO 128088 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-23 12:17:59.950  INFO 123404 --- [main] com.javademo.account.AccountApplication  : Starting AccountApplication using Java 1.8.0_241 on 105248-005L with PID 123404 (D:\Dilan\Microservices\bank-details-service\target\classes started by Dilan_105248 in D:\Dilan\Microservices\bank-details-service)
+2022-06-23 12:17:59.953  INFO 123404 --- [main] com.javademo.account.AccountApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-06-23 12:18:00.559  INFO 123404 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-23 12:18:00.633  INFO 123404 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 3 JPA repository interfaces.
+2022-06-23 12:18:01.136  INFO 123404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
+2022-06-23 12:18:01.144  INFO 123404 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-23 12:18:01.145  INFO 123404 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-23 12:18:01.393  INFO 123404 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-23 12:18:01.393  INFO 123404 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1401 ms
+2022-06-23 12:18:01.421  INFO 123404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-23 12:18:01.548  INFO 123404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-23 12:18:01.563  INFO 123404 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dcbapp'
+2022-06-23 12:18:01.683  INFO 123404 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-23 12:18:01.719  INFO 123404 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-23 12:18:01.896  INFO 123404 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-23 12:18:01.994  INFO 123404 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-06-23 12:18:02.542  INFO 123404 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-23 12:18:02.549  INFO 123404 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-23 12:18:02.909  WARN 123404 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-23 12:18:03.203  WARN 123404 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8099 is already in use
+2022-06-23 12:18:03.205  INFO 123404 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-23 12:18:03.205  INFO 123404 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-06-23 12:18:03.210  INFO 123404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-23 12:18:03.211  INFO 123404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-23 12:18:03.212  INFO 123404 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-06-23 12:18:03.225  INFO 123404 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-06-23 12:18:03.242 ERROR 123404 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8099 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8099 or configure this application to listen on another port.
+
+2022-06-23 12:18:11.977  INFO 2928 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-06-23 12:18:12.701  INFO 2928 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-23 12:18:12.702  INFO 2928 --- [RMI TCP Connection(2)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-06-23 12:18:12.924  INFO 2928 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-23 12:18:12.960  INFO 2928 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-23 12:18:22.815  INFO 127856 --- [main] com.javademo.account.AccountApplication  : Starting AccountApplication using Java 1.8.0_241 on 105248-005L with PID 127856 (D:\Dilan\Microservices\bank-details-service\target\classes started by Dilan_105248 in D:\Dilan\Microservices\bank-details-service)
+2022-06-23 12:18:22.817  INFO 127856 --- [main] com.javademo.account.AccountApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-06-23 12:18:23.304  INFO 127856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-23 12:18:23.357  INFO 127856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 3 JPA repository interfaces.
+2022-06-23 12:18:23.692  INFO 127856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
+2022-06-23 12:18:23.698  INFO 127856 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-23 12:18:23.699  INFO 127856 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-23 12:18:23.863  INFO 127856 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-23 12:18:23.863  INFO 127856 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1009 ms
+2022-06-23 12:18:23.884  INFO 127856 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-23 12:18:23.960  INFO 127856 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-23 12:18:23.969  INFO 127856 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dcbapp'
+2022-06-23 12:18:24.079  INFO 127856 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-23 12:18:24.112  INFO 127856 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-23 12:18:24.243  INFO 127856 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-23 12:18:24.314  INFO 127856 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-06-23 12:18:24.775  INFO 127856 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-23 12:18:24.782  INFO 127856 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-23 12:18:25.120  WARN 127856 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-23 12:18:25.415  INFO 127856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8099 (http) with context path ''
+2022-06-23 12:18:25.423  INFO 127856 --- [main] com.javademo.account.AccountApplication  : Started AccountApplication in 2.899 seconds (JVM running for 4.418)
+2022-06-23 12:18:28.628  INFO 127856 --- [http-nio-8099-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-23 12:18:28.629  INFO 127856 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-23 12:18:28.630  INFO 127856 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-23 12:18:28.716  INFO 127856 --- [http-nio-8099-exec-1] c.j.a.controller.AccountController       : start fetching account profile details in Account Controller for customer ID : 2
+2022-06-23 12:18:28.726  INFO 127856 --- [http-nio-8099-exec-1] c.j.a.service.impl.CustomerServiceImpl   : start fetching account profile details for customer ID : 2
+2022-06-23 12:18:28.859  INFO 127856 --- [http-nio-8099-exec-1] c.j.a.service.impl.CustomerServiceImpl   : end fetching account profile details for customer ID : 2
+2022-06-23 12:18:28.862  INFO 127856 --- [http-nio-8099-exec-1] c.j.a.controller.AccountController       : end fetching account profile details in Account Controller for customer ID : 2
+2022-06-23 12:18:32.587  INFO 127856 --- [http-nio-8099-exec-2] c.j.a.controller.AccountController       : start fetching account profile details in Account Controller for customer ID : 3
+2022-06-23 12:18:32.588  INFO 127856 --- [http-nio-8099-exec-2] c.j.a.service.impl.CustomerServiceImpl   : start fetching account profile details for customer ID : 3
+2022-06-23 12:18:32.595 ERROR 127856 --- [http-nio-8099-exec-2] c.j.a.controller.AccountController       : Exception in get acoount details controller Source must not be null
+2022-06-23 12:18:36.268  INFO 127856 --- [http-nio-8099-exec-3] c.j.a.controller.CustomerController      : start fetching Customer profile details in CustomerController for customer ID : 2
+2022-06-23 12:18:36.269  INFO 127856 --- [http-nio-8099-exec-3] c.j.a.service.impl.CustomerServiceImpl   : start fetching customer profile details for customer ID : 2
+2022-06-23 12:18:36.276  INFO 127856 --- [http-nio-8099-exec-3] c.j.a.service.impl.CustomerServiceImpl   : end fetching customer profile details for customer ID : 2
+2022-06-23 12:18:36.277  INFO 127856 --- [http-nio-8099-exec-3] c.j.a.controller.CustomerController      : end fetching Customer profile details in CustomerController for customer ID : 2
+2022-06-23 12:18:39.437  INFO 127856 --- [http-nio-8099-exec-4] c.j.a.controller.CustomerController      : start fetching Customer profile details in CustomerController for customer ID : 3
+2022-06-23 12:18:39.438  INFO 127856 --- [http-nio-8099-exec-4] c.j.a.service.impl.CustomerServiceImpl   : start fetching customer profile details for customer ID : 3
+2022-06-23 12:18:39.440 ERROR 127856 --- [http-nio-8099-exec-4] c.j.a.controller.CustomerController      : Exception in get customer profile controller Source must not be null
+2022-06-23 12:18:51.007  INFO 127856 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-06-23 12:18:51.646  INFO 127856 --- [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-06-23 12:18:51.861  INFO 127856 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-23 12:18:51.862  INFO 127856 --- [RMI TCP Connection(2)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-06-23 12:18:52.079  INFO 127856 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-23 12:18:52.105  INFO 127856 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
