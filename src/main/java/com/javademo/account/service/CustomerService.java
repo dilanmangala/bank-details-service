@@ -6,6 +6,6 @@ import com.javademo.account.response.CustomerResponse;
 
 public interface CustomerService {
 	
-	CustomerResponse getCustomerProfile(int customerId);
-	AccountResponse getAccountDetails(int customerId);
+	CustomerResponse getCustomerProfile(int customerId) throws Exception;
+	AccountResponse getAccountDetails(int customerId) throws Exception;
 }
