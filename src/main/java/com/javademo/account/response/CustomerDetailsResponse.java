@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
 public class CustomerDetailsResponse {
-	 	@JsonInclude(Include.NON_NULL)
+		@JsonInclude(Include.NON_DEFAULT)
 		private String customerId;
 		@JsonInclude(Include.NON_NULL)
 		private String errorCode;
