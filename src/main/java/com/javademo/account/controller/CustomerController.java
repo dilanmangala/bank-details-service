@@ -39,7 +39,7 @@ public class CustomerController {
 			log.info("start fetching Customer profile details in CustomerController for customer ID : {}", request.getCustomerId());
 			CustomerResponse customerResponse = customerService.getCustomerProfile(request.getCustomerId());
 			customerDetailsResponse.setCustomerResponse(customerResponse);
-			customerDetailsResponse.setCustomerId(request.getCustomerId());
+			//customerDetailsResponse.setCustomerId(request.getCustomerId());
 			customerDetailsResponse.setField1(request.getField1());
 			customerDetailsResponse.setField2(request.getField2());
 			customerDetailsResponse.setField3(request.getField3());
@@ -49,7 +49,7 @@ public class CustomerController {
 			log.info("end fetching Customer profile details in CustomerController for customer ID : {}", request.getCustomerId());
 		} catch (Exception e) {
 			log.error("Exception in get customer profile controller {}", e.getMessage());
-			customerDetailsResponse.setCustomerId(request.getCustomerId());
+			customerDetailsResponse.setCustomerId(String.valueOf(request.getCustomerId()));
 			customerDetailsResponse.setErrorCode("001");
 			customerDetailsResponse.setErrorDesc("Profile Not Found For Given Customer");
 			

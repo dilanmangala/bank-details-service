@@ -7,6 +7,7 @@ import com.javademo.account.entity.Account;
 
 public class AccountResponse {
 	
+	private int customerId;
 	private String mobileNo;
 	private String name;
 	private String panNo;
@@ -69,6 +70,12 @@ public class AccountResponse {
 	}
 	public void setAccountInfo(List<Account> accountInfo) {
 		this.accountInfo = accountInfo;
+	}
+	public int getCustomerId() {
+		return customerId;
+	}
+	public void setCustomerId(int customerId) {
+		this.customerId = customerId;
 	}
 	
 	

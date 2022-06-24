@@ -40,7 +40,7 @@ public class AccountController {
 			log.info("start fetching account profile details in Account Controller for customer ID : {}", request.getCustomerId());
 			AccountResponse accountResponse =  customerService.getAccountDetails(request.getCustomerId());
 			
-			accDetailsResponse.setCustomerId(request.getCustomerId());
+			//accDetailsResponse.setCustomerId(request.getCustomerId());
 			accDetailsResponse.setAccountResponse(accountResponse);
 			accDetailsResponse.setField1(request.getField1());
 			accDetailsResponse.setField2(request.getField2());
@@ -52,7 +52,7 @@ public class AccountController {
 			log.info("end fetching account profile details in Account Controller for customer ID : {}", request.getCustomerId());
 		} catch (Exception e) {
 			log.error("Exception in get acoount details controller {}", e.getMessage());
-			accDetailsResponse.setCustomerId(request.getCustomerId());
+			accDetailsResponse.setCustomerId(String.valueOf(request.getCustomerId()));
 			accDetailsResponse.setErrorCode("001");
 			accDetailsResponse.setErrorDesc("Account Not Found For Given Customer");
 			

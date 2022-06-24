@@ -4,7 +4,8 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
 public class AccountDetailsResponse {
-		private int customerId;
+		@JsonInclude(Include.NON_NULL)
+		private String customerId;
 		@JsonInclude(Include.NON_NULL)
 		private String errorCode;
 		@JsonInclude(Include.NON_NULL)
@@ -54,10 +55,10 @@ public class AccountDetailsResponse {
 			this.field5 = field5;
 		}
 		
-		public int getCustomerId() {
+		public String getCustomerId() {
 			return customerId;
 		}
-		public void setCustomerId(int customerId) {
+		public void setCustomerId(String customerId) {
 			this.customerId = customerId;
 		}
 		public String getErrorCode() {
