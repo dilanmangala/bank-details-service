@@ -7,30 +7,28 @@ pipeline {
     DOCKERHUB_CREDENTIALS = credentials('dilan1988-dockerhub')
   }
   stages {
-  	
-    stage("test"){
+  stage("test"){
         bat "ipconfig"
     }
-
     stage('Build') {
       steps {
-        sh 'docker build -t dilan1988/bank-alpine:latest .'
+        bat 'docker build -t dilan1988/bank-alpine:latest .'
       }
     }
     stage('Login') {
       steps {
-        sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-Ronaldo119'
+        bat 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-Ronaldo119'
       }
     }
     stage('Push') {
       steps {
-        sh 'docker push dilan1988/bank-alpine:latest'
+        bat 'docker push dilan1988/bank-alpine:latest'
       }
     }
   }
   post {
     always {
-      sh 'docker logout'
+      bat 'docker logout'
     }
   }
 }
