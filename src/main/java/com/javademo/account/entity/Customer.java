@@ -5,24 +5,10 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
-
-import org.hibernate.annotations.Fetch;
-import org.hibernate.annotations.FetchMode;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-@Entity
-@Table
+
 public class Customer implements Serializable{
 	public Customer() {}
 	public Customer(String mobileNo, String name, String panNo, String primaryAccountNo, boolean isActive,
@@ -38,8 +24,6 @@ public class Customer implements Serializable{
 		this.address = address;
 		this.accountInfo = accountInfo;
 	}
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int customerId;
 	private String mobileNo;
 	private String name;
@@ -50,15 +34,9 @@ public class Customer implements Serializable{
 	private String imei;
 	private Date latestLoggedIn;
 	
-	@OneToOne
-	@JoinColumn(name = "address_id")
 	@JsonIgnore
 	private Address address;
-	
-	@OneToMany(fetch = FetchType.EAGER,mappedBy = "customer",
-            cascade = CascadeType.ALL,
-            orphanRemoval = true)
-	@Fetch(FetchMode.SELECT)
+
 	@JsonIgnore
 	private List<Account> accountInfo = new ArrayList<>();
 	

@@ -2,20 +2,11 @@ package com.javademo.account.entity;
 
 import java.io.Serializable;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-@Entity
-@Table
+
 @JsonIgnoreProperties(value = { "id" })
 public class Address implements Serializable{
 	public Address() {}
@@ -29,8 +20,6 @@ public class Address implements Serializable{
 		this.pin = pin;
 	}
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	private String street;
 	private String building;
@@ -40,7 +29,6 @@ public class Address implements Serializable{
 	private String state;
 	private int pin;
 	
-	@OneToOne(mappedBy = "address")
 	@JsonIgnore
 	private Customer customer;
 
