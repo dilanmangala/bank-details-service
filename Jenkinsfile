@@ -7,9 +7,7 @@ pipeline {
     DOCKERHUB_CREDENTIALS = credentials('dilan1988-dockerhub')
   }
   stages {
-  stage("test"){
-        bat "ipconfig"
-    }
+ 
     stage('Build') {
       steps {
         bat 'docker build -t dilan1988/bank-alpine:latest .'
