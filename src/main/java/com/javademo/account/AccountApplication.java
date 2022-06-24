@@ -51,7 +51,7 @@ public class AccountApplication implements CommandLineRunner{
 		customer.setEmailId("sai@gmail.com");
 		customer.setImei("12");
 		customer.setLatestLoggedIn(new Date());
-		
+		customer.setMobileNo("07712345");
 		
 		
 		customer.setAddress(adddressRepo.findById(1));
