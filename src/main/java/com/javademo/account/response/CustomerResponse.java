@@ -8,6 +8,7 @@ import com.javademo.account.entity.Address;
 
 public class CustomerResponse {
 
+	private int customerId;
 	private String mobileNo;
 	private String name;
 	private String panNo;
@@ -72,6 +73,11 @@ public class CustomerResponse {
 		this.address = address;
 	}
 
-	
+	public int getCustomerId() {
+		return customerId;
+	}
+	public void setCustomerId(int customerId) {
+		this.customerId = customerId;
+	}
 	
 }
